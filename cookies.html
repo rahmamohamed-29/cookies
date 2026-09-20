@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookies</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Quicksand:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="cookies.css">
+</head>
+<body>
+    <header class="head">
+        <img class="logo" src="logo.png" alt="logo">
+
+        <!-- Hamburger button (only visible on small screens) -->
+        <button class="menu-toggle" id="menuToggle" type="button"
+                aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navLinks">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <ul class="links" id="navLinks">
+            <li class="item"><a class="section" href="#home">Home</a></li>
+            <li class="item"><a class="section" href="#about">About</a></li>
+            <li class="item"><a class="section" href="#menu">Menu</a></li>
+            <li class="item"><a class="section" href="#book">Order Now</a></li>
+        </ul>
+    </header>
+
+    <section id="home">
+        <img class="first" src="cookies.png" alt="cookies">
+        <h3 class="title">Baked with Love, Just for You</h3>
+        <p class="a">Experience the magic of homemade cookies in every bite</p>
+    </section>
+
+    <section id="about">
+        <h3 class="aboutus">About Us</h3>
+        <div class="b">
+            <p class="paragraph">Co🍪kies is a small cookie brand that focuses on making fresh,
+             delicious, and high-quality cookies. Our cookies are baked with love
+             using the best ingredients to give you the perfect taste in every bite .
+             <br>
+             We believe that cookies are more than just a snack. They bring happiness,
+             comfort, and sweet moments to your day. From classic chocolate chip
+             cookies to special flavors, our goal is to make every cookie a little
+             piece of bliss.</p>
+            <img class="photo" src="Rosslyn Maria.jpeg" alt="cookie">
+        </div>
+    </section>
+
+    <!-- The "Menu" heading now lives inside the section so the nav link scrolls to it -->
+    <section id="menu">
+        <h3 class="m">Menu</h3>
+        <div class="menu-grid">
+            <div class="element">
+                <img class="type" src="classic.png" alt="Classic Chocolate Chip Cookie">
+                <h5 class="name">Classic Chocolate Chip Cookie</h5>
+                <p class="discription">The ultimate timeless treat. A golden,
+                 buttery cookie dough packed with premium semi-sweet dark chocolate
+                 chips. It's crispy on the edges and soft, chewy in the middle</p>
+            </div>
+            <div class="element">
+                <img class="type" src="chocolate.png" alt="Double Chocolate Chunk Brownie Cookie">
+                <h5 class="name">Double Chocolate Chunk Brownie Cookie</h5>
+                <p class="discription">Deep, dark, and decadent. This cookie is
+                 for the true chocoholic, featuring a rich cocoa base topped with
+                 massive chunks of dark chocolate. It has a fudgy, brownie-like
+                 texture that is simply irresistible</p>
+            </div>
+            <div class="element">
+                <img class="type" src="oreo.png" alt="Cookies and Cream Oreo Cookie">
+                <h5 class="name">Cookies &amp; Cream (Oreo) Cookie</h5>
+                <p class="discription">The best of both worlds! A soft vanilla-based
+                 dough loaded with crushed Oreo pieces and white chocolate bits.
+                 It's a chunky, textured delight for every "cookies and cream" lover.</p>
+            </div>
+            <div class="element">
+                <img class="type" src="red velvet.png" alt="Red Velvet White Chocolate Cookie">
+                <h5 class="name">Red Velvet White Chocolate Cookie</h5>
+                <p class="discription">A stunning vibrant red cookie inspired by the
+                 classic cake. It has a rich, velvety cocoa flavor perfectly balanced
+                 by generous chunks of creamy, melt-in-your-mouth white chocolate</p>
+            </div>
+            <div class="element">
+                <img class="type" src="Lotus Biscoff Cookie.png" alt="Lotus Biscoff Cookie">
+                <h5 class="name">Lotus Biscoff Cookie</h5>
+                <p class="discription">A caramelized delight for spice-lover fans.
+                 This cookie features a signature cinnamon-infused dough, stuffed with creamy
+                 Biscoff spread and topped with an authentic Lotus biscuit for that perfect crunch.</p>
+            </div>
+            <div class="element">
+                <img class="type" src="Chocolate Hazelnut (Nutella Style) Cookie.png" alt="Chocolate Hazelnut Cookie">
+                <h5 class="name">Chocolate Hazelnut Cookie</h5>
+                <p class="discription">The ultimate nutty indulgence. A rich, dark cocoa cookie
+                 base studded with roasted hazelnut halves and premium chocolate chunks.
+                 It's crunchy, earthy, and intensely chocolatey.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="book">
+        <h4 class="n">Order Now</h4>
+        <form class="design" id="orderForm" novalidate>
+            <div class="elements">
+                <label class="opt" for="name">*Name:</label>
+                <input class="color" id="name" type="text" placeholder="Enter your name" required>
+            </div>
+
+            <div class="elements">
+                <span class="opt">*Select Cookie Type:</span>
+
+                <div class="container">
+                    <input id="c-classic" name="cookie" value="classic" type="checkbox">
+                    <label class="cookie-label" for="c-classic">Classic Chocolate Chip Cookie</label>
+                    <input class="counter" name="qty-classic" type="number" value="0" min="0" max="200" aria-label="Classic Chocolate Chip Cookie quantity">
+                </div>
+                <div class="container">
+                    <input id="c-chocolate" name="cookie" value="chocolate" type="checkbox">
+                    <label class="cookie-label" for="c-chocolate">Double Chocolate Chunk Brownie Cookie</label>
+                    <input class="counter" name="qty-chocolate" type="number" value="0" min="0" max="200" aria-label="Double Chocolate Chunk Brownie Cookie quantity">
+                </div>
+                <div class="container">
+                    <input id="c-oreo" name="cookie" value="oreo" type="checkbox">
+                    <label class="cookie-label" for="c-oreo">Cookies &amp; Cream (Oreo) Cookie</label>
+                    <input class="counter" name="qty-oreo" type="number" value="0" min="0" max="200" aria-label="Cookies and Cream Oreo Cookie quantity">
+                </div>
+                <div class="container">
+                    <input id="c-redvelvet" name="cookie" value="red velvet" type="checkbox">
+                    <label class="cookie-label" for="c-redvelvet">Red Velvet White Chocolate Cookie</label>
+                    <input class="counter" name="qty-redvelvet" type="number" value="0" min="0" max="200" aria-label="Red Velvet White Chocolate Cookie quantity">
+                </div>
+                <div class="container">
+                    <input id="c-lotus" name="cookie" value="Lotus" type="checkbox">
+                    <label class="cookie-label" for="c-lotus">Lotus Biscoff Cookie</label>
+                    <input class="counter" name="qty-lotus" type="number" value="0" min="0" max="200" aria-label="Lotus Biscoff Cookie quantity">
+                </div>
+                <div class="container">
+                    <input id="c-hazelnut" name="cookie" value="Chocolate Hazelnut" type="checkbox">
+                    <label class="cookie-label" for="c-hazelnut">Chocolate Hazelnut Cookie</label>
+                    <input class="counter" name="qty-hazelnut" type="number" value="0" min="0" max="200" aria-label="Chocolate Hazelnut Cookie quantity">
+                </div>
+                <p class="form-error" id="cookieError" role="alert" hidden>Please select at least one cookie.</p>
+            </div>
+
+            <div class="elements">
+                <label class="opt" for="address">*Your Address:</label>
+                <input class="color" id="address" type="text" placeholder="Enter your address" required>
+            </div>
+
+            <div class="elements">
+                <button class="submit-btn" type="submit">Submit Order</button>
+            </div>
+        </form>
+    </section>
+
+    <footer>
+        <p class="auther">🍪Made with love by Rahma Mohamed🍪</p>
+    </footer>
+
+    <script>
+        // Mobile navigation toggle
+        const toggle = document.getElementById('menuToggle');
+        const nav = document.getElementById('navLinks');
+
+        function setMenu(open) {
+            nav.classList.toggle('open', open);
+            toggle.setAttribute('aria-expanded', String(open));
+        }
+
+        toggle.addEventListener('click', () => setMenu(!nav.classList.contains('open')));
+
+        // Close the menu after tapping a link
+        nav.querySelectorAll('a').forEach(link =>
+            link.addEventListener('click', () => setMenu(false))
+        );
+
+        // ---- Order form: link each checkbox to its quantity ----
+        const orderForm = document.getElementById('orderForm');
+        const cookieError = document.getElementById('cookieError');
+        const MAX_QTY = 200;
+
+        document.querySelectorAll('#orderForm .container').forEach(row => {
+            const box = row.querySelector('input[type="checkbox"]');
+            const qty = row.querySelector('.counter');
+
+            // Ticking sets the quantity to 1 (if it was 0); unticking resets it to 0
+            box.addEventListener('change', () => {
+                if (box.checked) {
+                    if (!(parseInt(qty.value, 10) > 0)) qty.value = 1;
+                } else {
+                    qty.value = 0;
+                }
+                cookieError.hidden = true;
+            });
+
+            // Typing a quantity above 0 ticks the box; 0 or empty unticks it
+            qty.addEventListener('input', () => {
+                let n = parseInt(qty.value, 10);
+                if (n > MAX_QTY) { qty.value = MAX_QTY; n = MAX_QTY; }
+                box.checked = n > 0;
+                if (box.checked) cookieError.hidden = true;
+            });
+
+            // Tidy up the value when leaving the field
+            qty.addEventListener('blur', () => {
+                let n = parseInt(qty.value, 10);
+                if (isNaN(n) || n < 0) n = 0;
+                qty.value = Math.min(n, MAX_QTY);
+                box.checked = n > 0;
+            });
+
+            // Select the number on focus so it is easy to replace
+            qty.addEventListener('focus', () => qty.select());
+        });
+
+        // Require at least one cookie, and check the required text fields
+        orderForm.addEventListener('submit', event => {
+            const hasCookie = [...orderForm.querySelectorAll('input[name="cookie"]')]
+                .some(box => box.checked);
+
+            if (!orderForm.checkValidity()) {
+                event.preventDefault();
+                orderForm.reportValidity();
+                return;
+            }
+            if (!hasCookie) {
+                event.preventDefault();
+                cookieError.hidden = false;
+                cookieError.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            }
+        });
+
+        // Reset the menu if the window grows back to desktop size
+        window.addEventListener('resize', () => {
+            if (window.innerWidth > 768) setMenu(false);
+        });
+    </script>
+</body>
+</html>
